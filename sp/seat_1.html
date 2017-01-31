@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+
+
+<!--=========== METADATA ============-->
+<title>チケット予約・購入｜SoftBank HAWKS　タカチケット</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta equiv="expires" content="0" />
+<!--=========== /METADATA ============-->
+
+
+
+<!--=========== IMPORT ============-->
+<link rel="stylesheet" href="css/basic.css" />
+<!--=========== /IMPORT ============-->
+
+
+<!--=========== SCRIPT ============-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/library.js"></script>
+<!--=========== /SCRIPT ============-->
+</head>
+
+<body>
+
+
+
+<div id="container">
+<!--=========== .container ============-->
+
+
+
+<header id="header">
+<!--===== header =====-->
+
+<h1><img src="img/logo.png" width="148" height="25" alt="SoftBank HAWKS　タカチケット"></h1>
+
+<!--===== /header =====-->
+</header>
+
+
+
+<div class="main">
+<!--===== .main =====-->
+
+<h2><span>チケット予約・購入</span></h2>
+
+<section>
+<!-- .section -->
+
+<p class="stit">試合・座席選択</p>
+
+<p>ご希望の試合日、席種・枚数を選択してください。</p>
+
+<dl class="seat mtop10">
+<dt>空席状況</dt>
+<dd><span class="dcircle">◎</span>余裕あり</dd>
+<dd><span class="circle">○</span>残席あり</dd>
+<dd><span class="triangle">△</span>残席わずか</dd>
+<dd><span class="cross">×</span>満席</dd>
+</dl>
+
+<!-- /.section -->
+</section>
+
+<section>
+<!-- .section -->
+
+<h3><span>キャンペーンタイトル</span></h3>
+
+<p>キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要</p>
+
+<h4 class="mtop20">現在選択中の試合</h4>
+
+<div class="seat-box mtop10">
+<!-- .seat-box -->
+
+<p class="time"><span>2013年6月3日（火） 18：00</span><br>
+福岡Yahoo! JAPAN ドーム</p>
+
+<p class="tit-game">vs 東北楽天ゴールデンイーグルス</p>
+
+<p class="btn-toggle btn-w100 mbottom15">詳細を表示</p>
+
+<div class="toggle-cont">
+<!-- .toggle-cont -->
+
+<dl class="seat-charge">
+<dt>・販売対象券種</dt>
+<dd>
+<ul>
+<li>S指定席 ￥5,000：<span class="circle">○</span></li>
+<li>A指定席大人 ￥3,000：<span class="cross">×</span></li>
+<li>A指定席子ども ￥1,500：<span class="triangle">△</span></li>
+<li>B指定席大人 ￥2,000：<span class="cross">×</span></li>
+<li>B指定席子ども ￥1,000：<span class="dcircle">◎</span></li>
+</ul>
+</dd>
+<dt class="mtop10">・席種・料金</dt>
+<dd>ホークスプレミアムシート（１塁側）-5,000円※（空席あり）　ホークスプレミアムシート（３塁側）-5,000円※（空席あり）　内野指定席（１塁側）-4,000円※（空席あり）　内野指定席（３塁側）-4,000円※（空席あり）　内野自由おとな-2,000円※（空席あり）　内野自由こども※４歳～中学生-100円※（空席あり）　外野自由おとな-1,000円※（空席あり）　外野自由こども※４歳～中学生-100円※（空席あり）</dd>
+<dt class="mtop10">・注意事項</dt>
+<dd>
+<ul class="att pbottom10">
+<li>※４歳以上有料。コカ・コーラシート、ビクトリーウィング、ボックスファイブ、王貞治ミュージアムシートはチケットぴあでの取扱いなし。</li>
+<li>※公式戦とは席種・座席エリアが異なりますのでご注意下さい。</li>
+</ul></dd>
+</dl>
+
+<!-- /.toggle-cont -->
+</div>
+
+<!-- /.seat-box -->
+</div>
+
+<dl class="seat-area mtop10">
+<dt class="font14 fontbold">下記、球場画像を拡大・縮小し、ご希望のエリアを選択して、ブロック指定へお進み下さい。</dt>
+<dd class="tx-c"><img src="img/img_area01.gif" width="280" height="192" alt=""></dd>
+<dd class="seat-info font11 dotline">
+<p class="mtop0 fontbold">・座種情報</p>
+<ul>
+<li class="seat-square-s01">ホークスプレミアムシート</li>
+<li class="seat-square-s02">S指定席</li>
+<li class="seat-square-s03">A指定席</li>
+<li class="seat-square-s04">内野自由</li>
+<li class="seat-square-s05">B指定席</li>
+<li class="seat-square-s06">コカ・コーラシート</li>
+</ul>
+<ul>
+<li class="seat-square-s07">外野指定席/外野自由</li>
+<li class="seat-square-s08">ビジター応援席-指定<br>
+ビジター応援席-立見</li>
+<li class="seat-square-s09">シスコシート<br>
+JA全農なごみシート<br>
+JALスカイビューシート<br>
+ECCキッズパーク</li>
+</ul>
+</dd>
+<dd class="tx-c bg-confirm line">
+<select name="area">
+<option value="0">エリアを選択してください</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+</select>
+</dd>
+</dl>
+
+<ul class="btn-nav mtop10 font16">
+<li class="btn btn-w135"><a href="#">戻る</a></li>
+<li class="btn btn-bg01 btn-w135"><a href="#">ブロック選択へ</a></li>
+</ul>
+
+<ul class="mtop10">
+<li class="att">※販売状況により予定枚数を終了した、もしくは、公演により取り扱いの無い席がございます。予めご了承ください。</li>
+<li>※この会場図は公式戦のものです。オープン戦では席種、座席エリアが異なりますのでご注意ください。</li>
+<li>※内野自由席は、土日祝日・特定日はA指定席となります。</li>
+<li>※ビジター応援席-指定席/ビジター応援席-立見席は、試合日により席の範囲がかわります。 (平日はビジター応援席-自由)</li>
+</ul>
+
+<!-- /.section -->
+</section>
+
+
+<!--===== /.main =====-->
+</div>
+
+<footer>
+<!--=========== footer ============-->
+
+<div class="pagetop"><p><a href="#container">▲ ページTOP</a></p></div>
+<nav class="footer-nav">
+<ul>
+<li><a href="#">動作・セキュリティ</a></li>
+<li><a href="#">利用規約</a></li>
+<li><a href="#">ヘルプ</a></li>
+</ul>
+<p class="pc-btn mtop20"><a href="#">PC版サイトを見る</a></p>
+</nav>
+
+<nav class="footer-list">
+<ul>
+<li><a href="#">特定取引法に基づく表示</a></li>
+<li><a href="#">情報セキュリティポリシー</a></li>
+<li><a href="#">個人情報保護方針</a></li>
+<li><a href="#">お問い合わせ</a></li>
+</ul>
+</nav>
+
+<div class="copyrights">
+<p>記事や写真等の無断転用を禁じます。</p>
+<p><small>Copyright © Fukuoka SoftBank HAWKS Corp. All Rights Reserved.<br>
+Copyright © Fukuoka SoftBank HAWKS Marketing Corp. All Rights Reserved.<br>
+Copyright © Link Station Co.,Ltd. All rights reserved.</small></p>
+</div>
+
+
+<!--=========== /footer ============-->
+</footer>
+
+
+
+<!--=========== /.container ============-->
+</div>
+
+
+
+
+</body>
+</html>

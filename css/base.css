@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/*=====================================================
+ * Style Name: Base Reset
+ * Style URL: ./css/base.css
+ * Description: Common Stylesheet
+ * Version: 2.1
+ * Last Up Date: 2012/11/29
+ * Author: Neos
+ * Author URL: http://www.neoscorp.jp/
+ *
+ * Markup Reference: none
+ *
+=====================================================*/
+
+
+
+/*-----  contents -------
+
+	1: Universal Reset 
+	2: Body and Base setting
+		: General parameter setting
+		: Phrase elements styles
+	3: Link setting
+	  
+----------------------*/
+
+
+/*
+===== 1: universal reset =================================*/
+
+body, h1, h2, h3, h4, h5, h6,
+div, p, pre, ul, ol, li, dl, dt, dd,
+th, td, address, form, input, blockquote,
+em, strong, del, ins, code, var {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+
+/*
+===== 2: Body and Base setting ===========================*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 62.5%;
+	color: #333333;
+    font-family: "MS Gothic","ＭＳ ゴシック",sans-serif;	
+	letter-spacing: 0;
+	text-align: center;
+}
+
+/* General parameter setting
+--------------------*/
+
+h1, h2, h3, h4, h5, h6,
+div, p, pre, ul, ol, dl, dt, dd,
+th, td, address, form, blockquote {
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+p, pre, ul, ol, dl,
+address, blockquote {
+	font-size: 1.2em;
+}
+
+
+ul, ol, dl {
+	list-style-type: none;
+}
+
+table {
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	empty-cells: show;
+	font-size: 1.2em;
+	text-align: left;
+}
+
+
+caption {
+	text-align: left;
+}
+
+
+td p, td pre, td ul, td ol, td dl,
+dl p, dl pre, dl ul, dl ol, dl dl,
+ul ul, ul ol, ul dl, ul p,
+form {
+	font-size: 1.0em;
+}
+
+img {
+	vertical-align: bottom;
+	border: none;
+}
+
+
+
+/* Phrase elements styles
+-------------------------------------*/
+
+em {
+	color: #d30000;
+}
+
+
+strong {
+	font-weight: bold;
+}
+
+
+
+
+/*
+===== 3: Link setting ===========================*/
+
+a:link { color: #333333; text-decoration: underline; }
+a:visited { color: #333333; text-decoration: underline; }
+a:hover { color: #333333; text-decoration: none; }
+a:active { color: #333333; text-decoration: none; }
+
+#header a:link, .pagetop a:link { color: #333333; text-decoration: none; }
+#header a:visited, .pagetop a:visited { color: #333333; text-decoration: none; }
+#header a:hover, .pagetop a:hover { color: #333333; text-decoration: underline; }
+#header a:active, .pagetop a:active { color: #333333; text-decoration: underline; }
+
+#footer a:link { color: #ffffff; text-decoration: none; }
+#footer a:visited { color: #ffffff; text-decoration: none; }
+#footer a:hover { color: #ffffff; text-decoration: underline; }
+#footer a:active { color: #ffffff; text-decoration: underline; }

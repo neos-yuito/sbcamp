@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+<!--=========== METADATA ============-->
+<title>座種選択、ブロック指定｜SoftBank HAWKS　タカチケット</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<!--========== /METADATA ============-->
+
+
+
+<!--=========== IMPORT ============-->
+<link rel="stylesheet" type="text/css" media="all" href="css/import.css" />
+<!--=========== /IMPORT ============-->
+
+</head>
+
+
+
+<body>
+
+
+
+<div id="container">
+<!--=========== CONTAINER ============-->
+
+
+
+<div id="header-wrapper">
+<!--============ HEADER-WRAPPER =============-->
+
+<div id="header">
+<!--============ HEADER =============-->
+
+<p class="logo"><img src="img/logo.png" alt="SoftBank HAWKS　タカチケット" width="296" height="50" /></p>
+
+<ul class="subnav">
+<li class="first-child"><a href="#">動作・セキュリティ</a></li>
+<li><a href="#">利用規約</a></li>
+<li><a href="#">ヘルプ</a></li>
+</ul>
+
+<!--=========== /HEADER =============-->
+</div>
+
+<!--=========== /HEADER-WRAPPER =============-->
+</div>
+
+
+ 
+<div class="main">
+<!--=========== MAIN =============-->
+
+<form method="post" action="">
+
+
+<h1 class="tit">座種選択、ブロック指定</h1>
+
+
+<table cellpadding="0" cellspacing="0" class="progress-tracker mtop15">
+<tr>
+<td>試合・座席選択</td>
+<td>支払／チケット<br />引取方法選択</td>
+<td class="pre-current">席種選択<br />球場全体</td>
+<td class="current">席種選択<br />ブロック指定</td>
+<td>席種選択<br />個席選択</td>
+<td>席種内訳選択</td>
+<td>内容確認</td>
+<td class="last-child">完了</td>
+</tr>
+</table>
+
+
+<p class="mtop10">○○○○●○○○○●○○○○●○○○○●○○○○●○○○○●</p>
+
+<div class="vacancy mtop20">
+<dl>
+<dt>空席状況：</dt>
+<dd><span class="dcircle">◎</span>余裕あり</dd>
+<dd><span class="circle">○</span>残席あり</dd>
+<dd><span class="triangle">△</span>残席わずか</dd>
+<dd><span class="cross">×</span>満席</dd>
+</dl>
+</div>
+
+<h2 class="stit mtop10">キャンペーンタイトル</h2>
+
+<p class="mtop10">キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン</p>
+
+<table cellpadding="0" cellspacing="0" class="tbl-data tbl-horizon mtop20">
+<tr>
+<th class="valign-t">現在選択中の試合</th>
+<td class="font14 bg-confirm">2013年6月3日（火）　18：00<br />
+福岡Yahoo! JAPAN ドーム<br />
+<span class="fontbold">vs オリックス・バファローズ</span></td>
+</tr>
+<tr>
+<th class="valign-t">販売対象席種</th>
+<td class="font12 game-seat">
+<ul>
+<li>S指定席 5,000円：<span class="circle">○</span></li>
+<li>A指定席大人 3,000円：<span class="cross">×</span></li>
+<li>A指定席子ども 1,500円：<span class="triangle">△</span></li>
+<li>B指定席大人 2,000円：<span class="cross">×</span></li>
+<li>B指定席子ども 1,000円：<span class="dcircle">◎</span></li>
+</ul>
+</td>
+</tr>
+</table>
+
+<div class="cont-box mtop20">
+<dl class="seat-area">
+<dt class="fontbold">ご希望のブロックを選択し、座席選択へお進み下さい。</dt>
+<dd class="tx-c"><img src="img/img_area02.gif" width="475" height="427" alt="" /></dd>
+</dl>
+
+<dl class="block-select">
+<dt class="font14 fontbold">ブロック選択</dt>
+<dd class="tx-c select-large">
+<select name="block">
+<option value="0">ブロックを選択してください</option>
+<option value="1">C06</option>
+<option value="2">C07</option>
+<option value="3">C08</option>
+<option value="4">C09</option>
+<option value="5">D05</option>
+<option value="6">D06</option>
+<option value="7">D07</option>
+<option value="8">D08</option>
+</select>
+</dd>
+<dd class="bg-confirm">
+<ul>
+<li class="mtop5"><a href="#" class="btn-base btn-block btn-width05 font20 fontbold"><span><span>座席選択へ</span></span></a></li>
+<li class="mtop15"><a href="#" class="btn-base btn-return btn-width05 font14 fontbold"><span><span>戻る</span></span></a></li>
+</ul>
+</dd>
+</dl>
+
+</div>
+
+
+</form>
+
+<p class="pagetop"><a href="#container">▲ ページTOP</a></p>
+
+<!--=========== /MAIN =============-->
+</div>
+
+
+
+<div id="footer-wrapper">
+<!--============ FOOTER-WRAPPER =============-->
+
+<div id="footer">
+<!--=========== FOOTER =============-->
+
+<ul class="footernav">
+<li><a href="#">特定取引法に基づく表示</a></li>
+<li><a href="#">情報セキュリティポリシー </a></li>
+<li><a href="#">個人情報保護方針</a></li>
+<li class="last-child"><a href="#">お問い合わせ</a></li>
+</ul>
+
+<p class="gard">記事や写真等の無断転用を禁じます。</p>
+
+<p class="copyright">Copyright &copy; Fukuoka SoftBank HAWKS Corp. All Rights Reserved.<br />
+Copyright &copy; Fukuoka SoftBank HAWKS Marketing Corp. All Rights Reserved.<br />
+Copyright &copy; Link Station Co.,Ltd. All rights reserved.</p>
+
+<!--=========== /FOOTER =============-->
+</div>
+
+<!--=========== /FOOTER-WRAPPER =============-->
+</div>
+
+
+
+<!--=========== /CONTAINER ============-->
+</div>
+
+
+
+<!--=========== SCRIPT ============-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/ui.elements.js"></script>
+<script type="text/javascript">
+$(function(){
+	// selectのデザイン変更
+	var selectlist = new Array();
+	$('select').each(function(i){
+		var namekey = new Array();
+		namekey['name'] = $(this).attr("name");
+		selectlist[i] = namekey;
+	});
+	$('form').UIElements({
+		select: selectlist
+	});
+	
+	$('ul.UIElm-select-option').each(function(i){
+		$(this).find('li:last').addClass('last-child');
+	});
+});
+</script>
+<!--=========== /SCRIPT ============-->
+
+
+</body>
+</html>

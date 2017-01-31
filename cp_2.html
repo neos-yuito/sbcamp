@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+<!--=========== METADATA ============-->
+<title>試合・座席選択｜SoftBank HAWKS　タカチケット</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<!--========== /METADATA ============-->
+
+
+
+<!--=========== IMPORT ============-->
+<link rel="stylesheet" type="text/css" media="all" href="css/import.css" />
+<!--=========== /IMPORT ============-->
+</head>
+
+
+
+<body>
+
+
+
+<div id="container">
+<!--=========== CONTAINER ============-->
+
+
+
+<div id="header-wrapper">
+<!--============ HEADER-WRAPPER =============-->
+
+<div id="header">
+<!--============ HEADER =============-->
+
+<p class="logo"><img src="img/logo.png" alt="SoftBank HAWKS　タカチケット" width="296" height="50" /></p>
+
+<ul class="subnav">
+<li class="first-child"><a href="#">動作・セキュリティ</a></li>
+<li><a href="#">利用規約</a></li>
+<li><a href="#">ヘルプ</a></li>
+</ul>
+
+<!--=========== /HEADER =============-->
+</div>
+
+<!--=========== /HEADER-WRAPPER =============-->
+</div>
+
+
+ 
+<div class="main">
+<!--=========== MAIN =============-->
+
+<form method="post" action="">
+
+
+<h1 class="tit">試合・座席選択</h1>
+
+
+<table cellpadding="0" cellspacing="0" class="progress-tracker mtop15">
+<tr>
+<td class="current">試合・座席選択</td>
+<td>支払／チケット<br />引取方法選択</td>
+<td>席種選択<br />球場全体</td>
+<td>席種選択<br />ブロック指定</td>
+<td>席種選択<br />個席選択</td>
+<td>席種内訳選択</td>
+<td>内容確認</td>
+<td class="last-child">完了</td>
+</tr>
+</table>
+
+
+
+<p class="mtop10">ご希望の試合日、席種・枚数を選択してください。</p>
+
+<div class="vacancy mtop20">
+<dl>
+<dt>空席状況：</dt>
+<dd><span class="dcircle">◎</span>余裕あり</dd>
+<dd><span class="circle">○</span>残席あり</dd>
+<dd><span class="triangle">△</span>残席わずか</dd>
+<dd><span class="cross">×</span>満席</dd>
+</dl>
+</div>
+
+<h2 class="stit mtop10">キャンペーンタイトル</h2>
+
+<p class="mtop10">キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン概要キャンペーン</p>
+
+
+<table cellpadding="0" cellspacing="0" class="tbl-game mtop20">
+<tr>
+<td rowspan="2" class="width06 valign-t">
+<dl class="game-day">
+<dt class="fontbold">2013年6月3日（火）　18：00</dt>
+<dd>福岡Yahoo! JAPAN ドーム</dd>
+</dl>
+
+<dl class="game-seat mtop20">
+<dt class="font16 fontbold">福岡ソフトバンクホークス vs オリックス・バファローズ</dt>
+<dd class="fontbold mtop10">・チケット空席情報</dd>
+<dd>
+<ul>
+<li>S指定席 5,000円：<span class="circle">○</span></li>
+<li>A指定席大人 3,000円：<span class="cross">×</span></li>
+<li>A指定席子ども 1,500円：<span class="triangle">△</span></li>
+<li>B指定席大人 2,000円：<span class="cross">×</span></li>
+<li>B指定席子ども 1,000円：<span class="dcircle">◎</span></li>
+</ul>
+</dd>
+<dd>【備考】 子ども券は小学生以下のお子様対象です</dd>
+</dl>
+</td>
+<td class="width07 bg-select btm-dotline">
+
+<dl class="seat-select">
+<dt>座席を選択して購入</dt>
+<dd class="font12">会場図より、座席を選択できます</dd>
+</dl>
+
+<ul class="seat-select">
+<li class="btn-area">
+<a href="#" class="btn-base btn-select btn-width03"><span><span>座席を選択する</span></span></a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="bg-select">
+<dl class="seat-select">
+<dt>座席を選択しないで購入</dt>
+<dd class="font12">コンピュータが自動で最もよいお席を探します</dd>
+</dl>
+
+<ul class="seat-select">
+<li>
+<select name="seat1">
+<option value="0">席種を選択してください</option>
+<option value="1">コカ・コーラシートA</option>
+<option value="2">ホークスプレミアムシートSS</option>
+<option value="3">ビクトリーウイング　ファミリー向けゾーン ECCキッズパーク</option>
+<option value="4">王貞治ベースボールミュージアム ミュージアムカウンターシート</option>
+</select></li>
+<li>
+<select name="ticket1">
+<option value="0">枚数を選択してください</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select></li>
+<li><a href="#" class="btn-base btn-select btn-width03"><span><span>お申し込み</span></span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" class="tbl-game mtop20">
+<tr>
+<td rowspan="2" class="width06 valign-t">
+<dl class="game-day">
+<dt class="fontbold">2013年6月3日（火）　18：00</dt>
+<dd>福岡Yahoo! JAPAN ドーム</dd>
+</dl>
+
+<dl class="game-seat mtop20">
+<dt class="font16 fontbold">福岡ソフトバンクホークス vs 北海道日本ハムファイターズ</dt>
+<dd class="fontbold mtop10">・チケット空席情報</dd>
+<dd>
+<ul>
+<li>S指定席 5,000円：<span class="circle">○</span></li>
+<li>A指定席大人 3,000円：<span class="cross">×</span></li>
+<li>A指定席子ども 1,500円：<span class="triangle">△</span></li>
+<li>B指定席大人 2,000円：<span class="cross">×</span></li>
+<li>B指定席子ども 1,000円：<span class="dcircle">◎</span></li>
+</ul>
+</dd>
+<dd>【備考】 子ども券は小学生以下のお子様対象です</dd>
+</dl>
+</td>
+<td class="width07 bg-select btm-dotline">
+<dl class="seat-select">
+<dt>座席を選択して購入</dt>
+<dd class="font12">会場図より、座席を選択できます</dd>
+</dl>
+
+<ul class="seat-select">
+<li>
+<a href="#" class="btn-base btn-select btn-width03"><span><span>座席を選択する</span></span></a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td class="bg-select">
+
+<dl class="seat-select">
+<dt>座席を選択しないで購入</dt>
+<dd class="font12">コンピュータが自動で最もよいお席を探します</dd>
+</dl>
+
+<ul class="seat-select">
+<li><select name="seat2">
+<option value="0">席種を選択してください</option>
+<option value="1">コカ・コーラシートA</option>
+<option value="2">ホークスプレミアムシートSS</option>
+<option value="3">ビクトリーウイング　ファミリー向けゾーン ECCキッズパーク</option>
+<option value="4">王貞治ベースボールミュージアム ミュージアムカウンターシート</option>
+</select></li>
+<li><select name="ticket2">
+<option value="0">枚数を選択してください</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select></li>
+<li><a href="#" class="btn-base btn-select btn-width03"><span><span>お申し込み</span></span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" class="tbl-game mtop20">
+<tr>
+<td class="width06 valign-t">
+<dl class="game-day">
+<dt class="fontbold">2013年6月3日（火）　18：00</dt>
+<dd>福岡Yahoo! JAPAN ドーム</dd>
+</dl>
+
+<dl class="game-seat mtop20">
+<dt class="font16 fontbold">福岡ソフトバンクホークス vs 埼玉西武ライオンズ</dt>
+<dd class="fontbold mtop10">・チケット空席情報</dd>
+<dd>
+<ul>
+<li>S指定席 5,000円：<span class="circle">○</span></li>
+<li>A指定席大人 3,000円：<span class="cross">×</span></li>
+<li>A指定席子ども 1,500円：<span class="triangle">△</span></li>
+<li>B指定席大人 2,000円：<span class="cross">×</span></li>
+<li>B指定席子ども 1,000円：<span class="dcircle">◎</span></li>
+</ul>
+</dd>
+<dd>【備考】 子ども券は小学生以下のお子様対象です</dd>
+</dl>
+</td>
+<td class="width07 bg-select valign-m">
+<dl class="seat-select">
+<dt>座席を選択して購入</dt>
+<dd class="font12">会場図より、座席を選択できます</dd>
+</dl>
+
+<ul class="seat-select">
+<li>
+<a href="#" class="btn-base btn-select btn-width03"><span><span>座席を選択する</span></span></a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" class="tbl-game mtop20">
+<tr>
+<td class="width06 valign-t">
+<dl class="game-day">
+<dt class="fontbold">2013年6月3日（火）　18：00</dt>
+<dd>福岡Yahoo! JAPAN ドーム</dd>
+</dl>
+
+<dl class="game-seat mtop20">
+<dt class="font16 fontbold">福岡ソフトバンクホークス vs 東北楽天ゴールデンイーグルス</dt>
+<dd class="fontbold mtop10">・チケット空席情報</dd>
+<dd>
+<ul>
+<li>S指定席 5,000円：<span class="circle">○</span></li>
+<li>A指定席大人 3,000円：<span class="cross">×</span></li>
+<li>A指定席子ども 1,500円：<span class="triangle">△</span></li>
+<li>B指定席大人 2,000円：<span class="cross">×</span></li>
+<li>B指定席子ども 1,000円：<span class="dcircle">◎</span></li>
+</ul>
+</dd>
+<dd>【備考】 子ども券は小学生以下のお子様対象です</dd>
+</dl>
+</td>
+<td class="width07 bg-select valign-m">
+
+<dl class="seat-select">
+<dt>座席を選択しないで購入</dt>
+<dd class="font12">コンピュータが自動で最もよいお席を探します</dd>
+</dl>
+<ul class="seat-select">
+<li><select name="seat3">
+<option value="0">席種を選択してください</option>
+<option value="1">コカ・コーラシートA</option>
+<option value="2">ホークスプレミアムシートSS</option>
+<option value="3">ビクトリーウイング　ファミリー向けゾーン ECCキッズパーク</option>
+<option value="4">王貞治ベースボールミュージアム ミュージアムカウンターシート</option>
+</select></li>
+<li><select name="ticket3">
+<option value="0">枚数を選択してください</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select></li>
+<li><a href="#" class="btn-base btn-select btn-width03"><span><span>お申し込み</span></span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+
+</form>
+
+<p class="pagetop"><a href="#container">▲ ページTOP</a></p>
+
+<!--=========== /MAIN =============-->
+</div>
+
+
+
+<div id="footer-wrapper">
+<!--============ FOOTER-WRAPPER =============-->
+
+<div id="footer">
+<!--=========== FOOTER =============-->
+
+<ul class="footernav">
+<li><a href="#">特定取引法に基づく表示</a></li>
+<li><a href="#">情報セキュリティポリシー </a></li>
+<li><a href="#">個人情報保護方針</a></li>
+<li class="last-child"><a href="#">お問い合わせ</a></li>
+</ul>
+
+<p class="gard">記事や写真等の無断転用を禁じます。</p>
+
+<p class="copyright">Copyright &copy; Fukuoka SoftBank HAWKS Corp. All Rights Reserved.<br />
+Copyright &copy; Fukuoka SoftBank HAWKS Marketing Corp. All Rights Reserved.<br />
+Copyright &copy; Link Station Co.,Ltd. All rights reserved.</p>
+
+<!--=========== /FOOTER =============-->
+</div>
+
+<!--=========== /FOOTER-WRAPPER =============-->
+</div>
+
+
+
+<!--=========== /CONTAINER ============-->
+</div>
+
+
+
+<!--=========== SCRIPT ============-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/ui.elements.js"></script>
+<script type="text/javascript">
+$(function(){
+	// selectのデザイン変更
+	var selectlist = new Array();
+	$('select').each(function(i){
+		var namekey = new Array();
+		namekey['name'] = $(this).attr("name");
+		selectlist[i] = namekey;
+	});
+	$('form').UIElements({
+		select: selectlist
+	});
+	
+	$('ul.UIElm-select-option').each(function(i){
+		$(this).find('li:last').addClass('last-child');
+	});
+});
+</script>
+<!--=========== /SCRIPT ============-->
+
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+
+
+<!--=========== METADATA ============-->
+<title>SoftBank HAWKS　タカチケット</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta equiv="expires" content="0" />
+<!--=========== /METADATA ============-->
+
+
+
+<!--=========== IMPORT ============-->
+<link rel="stylesheet" href="css/basic.css" />
+<!--=========== /IMPORT ============-->
+
+
+<!--=========== SCRIPT ============-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/library.js"></script>
+<script>
+$(function(){   
+  $("p.btn-toggle02").click(function(){
+  		$(this).toggleClass("toggle-close");
+        $(this).next().slideToggle();
+  }); 
+});
+</script>
+
+<!--=========== /SCRIPT ============-->
+</head>
+
+<body>
+
+
+
+<div class="container">
+<!--=========== .container ============-->
+
+
+
+<div class="main">
+<!--===== .main =====-->
+
+<section>
+<!-- .section -->
+
+
+
+<div class="input-screen mtop20">
+<dl>
+<dt>シリアルIDを入力して下さい。</dt>
+<dd><input name="ticket" size="20" type="text" /></dd>
+</dl>
+</div>
+
+<p class="btn-toggle02 mtop30">利用規約</p>
+<div class="toggle-cont">
+<p>ここに利用規約本文が入ります。ここに利用規約本文が入ります。ここに利用規約本文が入ります。ここに利用規約本文が入ります。・・・</p>
+</div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mtop30">
+<tr>
+<th class="tbl-w45 tx-c">席種</th>
+<th class="tbl-w30 tx-c">料金</th>
+<th class="tbl-w25 tx-c">枚数</th>
+</tr>
+<tr>
+<td>B指定 大人</td>
+<td class="tx-r">3,000円</td>
+<td class="tx-c"><select name="ticket1">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select></td>
+</tr>
+<tr>
+<td>B指定 小人</td>
+<td class="tx-r">1,500円</td>
+<td class="tx-c"><select name="ticket2">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select></td>
+</tr>
+</table>
+
+
+
+<h3><span>現在選択中の試合、席種、枚数</span></h3>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mtop20">
+<tr>
+<th>試合日時</th>
+<td class="bg-confirm">2013年6月3日（火）18：00</td>
+</tr>
+<tr>
+<th>試合名</th>
+<td class="fontbold bg-confirm">福岡ソフトバンクホークス vs オリックス・バファローズ</td>
+</tr>
+<tr>
+<th>会場</th>
+<td class="bg-confirm">ヤフードーム</td>
+</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mtop20">
+<tr>
+<th class="tbl-w50 tx-c">席種</th>
+<th class="tbl-w30 tx-c">料金</th>
+<th class="tbl-w20 tx-c">枚数</th>
+</tr>
+<tr>
+<td>B指定 大人</td>
+<td class="tx-r">3,000円</td>
+<td class="tx-c">2</td>
+</tr>
+<tr>
+<td>B指定 小人</td>
+<td class="tx-r">1,500円</td>
+<td class="tx-c">2</td>
+</tr>
+</table>
+
+
+<h4 class="mtop20">チケット引取方法・お支払方法を選択してください</h4>
+
+<div class="ticket-box mtop20">
+<p><label><input type="radio" name="dealings" value="ticketing1" checked="checked" />ヤフードームで発券する（クレジット決済のみ）</label></p>
+<p class="btn-toggle btn-w100">詳細を表示</p>
+<div class="toggle-cont">
+<p>ヤフードームの総合案内所（８ゲート付近）、ホークスBBステーション（５ゲート付近）に設置してある発券機にて、チケットのお引取ができます。<br>
+発券手数料 ： 発券手数料はかかりません</p>
+<p>以下のクレジットカードがご利用できます。支払回数は一括のみとなります。</p>
+<ul>
+<li><img src="img/pay01.gif" width="40" height="26" alt=""></li>
+<li><img src="img/pay02.gif" width="41" height="26" alt=""></li>
+<li><img src="img/pay03.gif" width="30" height="26" alt=""></li>
+<li><img src="img/pay04.gif" width="19" height="26" alt=""></li>
+<li><img src="img/pay05.gif" width="40" height="26" alt=""></li>
+<li><img src="img/pay06.gif" width="23" height="26" alt=""></li>
+<li><img src="img/pay07.gif" width="25" height="26" alt=""></li>
+</ul>
+</div>
+</div>
+
+<div class="ticket-box mtop20">
+<p><label><input type="radio" name="dealings" value="ticketing2" />  セブンーイレブンで発券する（代金は店頭でお支払）</label></p>
+<p class="btn-toggle btn-w100">詳細を表示</p>
+<div class="toggle-cont">
+<p>お近くのセブンイレブンでチケットのお引取ができます。<br>
+予約有効期限内にお引取ください。期限を過ぎますとご予約は無効となります。<br>
+お引取時に店頭レジにてチケット代金をお支払ください。</p>
+<p>決済手数料　：　１５７円／１申し込みあたり<br>
+発券手数料　：　１０５円／１枚あたり</p>
+</div>
+</div>
+
+
+
+<div class="info mtop30">
+<p>名前</p>
+<ul>
+<li><input name="name1" size="22" type="text" placeholder="姓" /></li>
+<li><input name="kana1" size="22" type="text" placeholder="セイ" /></li>
+<li><input name="name2" size="22" type="text" placeholder="名" /></li>
+<li><input name="kana2" size="22" type="text" placeholder="メイ" /></li>
+</ul>
+
+<p>住所</p>
+<ul>
+<li><input name="zip" size="22" type="text" placeholder="郵便番号" /></li>
+<li><input name="address1" size="22" type="text" placeholder="市区町村" /></li>
+<li><input name="address2" size="22" type="text" placeholder="町内番地" /></li>
+<li><input name="address3" size="22" type="text" placeholder="ビル・マンション名など" /></li>
+
+</ul>
+
+<p>電話番号</p>
+<ul class="tel">
+<li><input name="tel1" size="7" type="text" /><span>-</span><input name="tel2" size="7" type="text" /><span>-</span><input name="tel3" size="7" type="text" /></li>
+</ul>
+
+<p>生年月日</p>
+<ul class="birth">
+<li><input name="y" size="7" type="text" /><span>年</span><input name="m" size="7" type="text" /><span>月</span><input name="d" size="7" type="text" /><span>日</span></li>
+</ul>
+
+<p>メールアドレス</p>
+<ul>
+<li><input name="mail1" size="22" type="text" /></li>
+<li><input name="mail2" size="22" type="text" placeholder="再入力" /></li>
+</ul>
+
+<p>クレジットカード</p>
+<ul>
+<li><input name="card1" size="22" type="text" placeholder="番号" /></li>
+<li><input name="card2" size="22" type="text" placeholder="有効期限" /></li>
+<li><input name="card3" size="22" type="text" placeholder="カード名義" /></li>
+<li><input name="card4" size="22" type="text" placeholder="セキュリティコード" /></li>
+</ul>
+
+<p>支払方法</p>
+<p class="pay">
+<span class="switch"><input type="radio" id="radio1" name="field"  checked="checked" />
+<label for="radio1" onClick="" class="cb-enable"><span>一括</span></label>
+<input type="radio" id="radio2" name="field" />
+<label for="radio2" onClick="" class="cb-disable"><span>リボ払い</span></label></span>
+</p>
+
+</div>
+
+<!-- /.section -->
+</section>
+
+
+
+<!--===== /.main =====-->
+</div>
+
+<footer>
+<!--=========== footer ============-->
+
+
+<!--=========== /footer ============-->
+</footer>
+
+
+
+<!--=========== /.container ============-->
+</div>
+
+
+
+
+</body>
+</html>

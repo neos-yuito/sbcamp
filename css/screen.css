@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*=====================================================
+ * Style Name: Screen Style
+ * Style URL: ./css/screen.css
+ * Description: Common Stylesheet
+ * Version: 2.4
+ * Last Up Date: 2012/11/29
+ * Author: Neos
+ * Author URL: http://www.neoscorp.jp/
+ *
+ * Markup Reference: none
+ *
+=====================================================*/
+
+
+
+/*-----  contents -------
+
+	1: ヘッダ [id="header"]
+	2: コンテナー [id="container"]
+	3: コンテンツ [class="main"]
+	4: フッター [id="footer"]
+	  
+----------------------*/
+
+
+/*1:ヘッダ [id="header"]
+=================================*/
+
+#header-wrapper {
+	position: relative;
+	border-top: #fcc800 3px solid;
+	border-bottom: #000000 1px solid;
+	text-align: left;
+}
+#header {
+	position: relative;
+	margin: 0 auto;
+	width: 980px;
+}
+
+#header h1,
+#header p.logo {
+	padding: 13px 0 14px;
+}
+
+
+ul.subnav {
+	position: absolute;
+	top: 50%;
+	right: 2px;
+	margin-top: -.65em;
+	text-align: right;
+}
+ul.subnav li {
+	display: inline;
+	margin-left: 7px;
+	padding-left: 10px;
+	border-left: #333333 1px solid;
+	line-height: 1.3em;
+	letter-spacing: 0;
+	font-size: 108%;
+}
+ul.subnav li.first-child {
+	border: none;
+}
+
+
+
+/*2:コンテナー [id="container"]
+=================================*/
+#container {
+	position: relative;
+	margin: 0;
+	text-align: center;
+}
+
+
+/*3:コンテンツ [class="main"]
+=================================*/
+.main {
+	position: relative;
+	margin: 0 auto;
+	padding: 35px 0 5px;
+	width: 980px;
+	font-size: 116.66%;
+}
+
+
+
+/*4:フッター [id="footer"]
+=================================*/
+
+#footer-wrapper {
+	position: relative;
+	padding: 22px 0 50px;
+	background: #2d2e2f;
+	text-align: left;
+}
+#footer {
+	position: relative;
+	margin: 0 auto;
+	width: 980px;
+}
+
+#footer ul.footernav {
+	text-align: center;
+}
+#footer ul.footernav li {
+	display: inline;
+	margin-right: 6px;
+	padding-right: 9px;
+	border-right: #ffffff 1px solid;
+	line-height: 1.3em;
+}
+#footer ul.footernav li.last-child {
+	margin-right: 0;
+	padding-right: 0;
+	border: none;
+}
+
+#footer p.gard,
+#footer p.copyright {
+	margin-top: 20px;
+	color: #bbbbbb;
+	font-size: 100%;
+	text-align: center;
+}
+#footer p.copyright {
+	margin-top: 10px;
+}
