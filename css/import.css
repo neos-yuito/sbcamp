@@ -19,8 +19,10 @@
 	1: Base Style Reset
 	2: Screen Style
 	3: Contents
-	4: Plugin Style
-	  
+  4: Plugin Style
+  5: Header Style
+	6: Footer Style
+
 ----------------------*/
 
 
@@ -50,3 +52,13 @@
 
 /*
 ===== 4: Plugin Style ===========================*/
+
+
+
+/*
+===== 5: Header Style ===========================*/
+@import url(header.css);
+
+/*
+===== 6: Footer Style ===========================*/
+@import url(footer.css);
