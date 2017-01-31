@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*=====================================================
+ * Style Name: Contents Style
+ * Style URL: ./css/contens.css
+ * Description: Contents Stylesheet
+ * Version: 0.2
+ * Last Up Date: 2012/11/29
+ * Author: Neos
+ * Author URL: http://www.neoscorp.jp/
+ *
+ * Markup Reference: none
+ *
+=====================================================*/
+
+/* ==========================================================================
+ Layout
+===========================================================================*/
+/* -----------------------------------------------------------------
+ Footer
+----------------------------------------------------------------- */
+.l-footer {
+  padding: 15px 0;
+  width: 100%;
+  height: 80px;
+  background: #000;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.l-footer * {
+  color: #fff;
+    font-family: Helvetica , Avenir , "Open Sans" , Arial , Verdana , Roboto , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.l-footer--nav {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.l-footer--nav ul {
+	text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+
+.l-footer--nav li {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.l-footer--nav li:not(:last-child):after {
+  content: "|";
+  padding-left: .25em;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.l-footer--nav a {
+  display: inline-block;
+  padding: 0 5px;
+  color: #fff;
+  text-decoration: none;
+  box-sizing: border-box;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  cursor: pointer;
+}
+
+.l-footer--nav a:hover {
+	opacity: .6;
+}
+
+.l-footer .copyrights {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* -----------------------------------------------------------------
+ Pagetop
+----------------------------------------------------------------- */
+.pagetop {
+  padding: 15px 0;
+  background: #ffffff;
+  text-align: center;
+}
+
+.pagetop a {
+  overflow: hidden;
+  display: inline-block;
+  width: 22px;
+  height: 30px;
+  background: url(../asset/img/pagetop.png) no-repeat 0 50%;
+  background-size: 22px auto;
+  text-indent: -9999em;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  cursor: pointer;
+}
+
+.pagetop a:hover {
+	opacity: .6;
+}

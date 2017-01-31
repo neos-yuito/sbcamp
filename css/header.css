@@ -1,0 +1,375 @@
+@charset "utf-8";
+
+/*=====================================================
+ * Style Name: Contents Style
+ * Style URL: ./css/contens.css
+ * Description: Contents Stylesheet
+ * Version: 0.2
+ * Last Up Date: 2012/11/29
+ * Author: Neos
+ * Author URL: http://www.neoscorp.jp/
+ *
+ * Markup Reference: none
+ *
+=====================================================*/
+
+/* ==========================================================================
+ Layout
+===========================================================================*/
+/* -----------------------------------------------------------------
+ Header
+----------------------------------------------------------------- */
+.l-header {
+  overflow: hidden;
+  min-height: 110px;
+  background: #ffffff;
+  border-bottom: 1px solid #fcc800;
+}
+
+.l-header * {
+  color: #000000;
+    font-family: Helvetica , Avenir , "Open Sans" , Arial , Verdana , Roboto , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.l-header--inner {
+  position: relative;
+  padding: 24px 0 0;
+  margin: 0 auto;
+  width: 980px;
+}
+
+.l-header--inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.l-header--inner:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: -110px;
+  display: inline-block;
+  width: 190px;
+  height: 205px;
+  background: url(../asset/img/bg_header.png) no-repeat 0 0;
+  background-size: 190px auto;
+  z-index: 0;
+}
+/* logo
+------------------------------------*/
+.l-header--logo {
+  float: left;
+  font-size: 1rem;
+  line-height: 0;
+}
+
+.l-header--logo a {
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  cursor: pointer;
+}
+
+.l-header--logo a:hover {
+  opacity: .6;
+}
+
+.l-header--logo img {
+  width: 296px;
+  height: auto;
+  background: #ffffff;
+}
+
+/* -----------------------------------------------------------------
+ Header navigation
+----------------------------------------------------------------- */
+/* desktop
+----------------------------------------------------------------- */
+.l-header--nav {
+  position: relative;
+  float: right;
+  margin: 6px 0 0;
+  font-size: 14px;
+  vertical-align: middle;
+  z-index: 1;
+  /* login/out */
+}
+
+.l-header--nav:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.l-header--nav .l-header--nav-login,
+.l-header--nav .l-header--nav-logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1;
+  text-align: center;
+  border-radius: 3px;
+  background: #ffffff;
+}
+
+.l-header--nav .l-header--nav-login a,
+.l-header--nav .l-header--nav-logout a {
+  display: block;
+  padding-top: 37px;
+  width: 100px;
+  height: 60px;
+  background-color: #eee;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-decoration: none;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.l-header--nav .l-header--nav-login a:hover,
+.l-header--nav .l-header--nav-logout a:hover {
+  opacity: .6;
+}
+
+.l-header--nav .l-header--nav-login a {
+  background: #eee url(../asset/img/icon_login.svg) no-repeat 50% 9px;
+  background-size: 27px auto;
+}
+
+.l-header--nav .l-header--nav-logout a {
+  background: #eee url(../asset/img/icon_logout.svg) no-repeat 50% 9px;
+  background-size: 27px auto;
+}
+
+.l-header--nav .l-header--nav-primary,
+.l-header--nav .l-header--nav-secondary {
+  margin-right: 110px;
+}
+
+.l-header--nav .l-header--nav-primary:after,
+.l-header--nav .l-header--nav-secondary:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.l-header--nav .l-header--nav-primary {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.l-header--nav .l-header--nav-primary ul li {
+  text-align: right;
+}
+
+.l-header--nav .l-header--nav-primary a {
+  color: #00a0e9;
+  text-decoration: underline;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.l-header--nav .l-header--nav-primary a:hover {
+  opacity: .6;
+}
+
+.l-header--nav .l-header--nav-secondary {
+  float: right;
+}
+
+.l-header--nav .l-header--nav-secondary li {
+  float: left;
+}
+
+.l-header--nav .l-header--nav-secondary li:not(:last-child):after {
+  content: " ";
+  display: inline-block;
+  margin: 0 10px 2px;
+  width: 1px;
+  height: 12px;
+  background: #000000;
+  vertical-align: middle;
+}
+
+.l-header--nav .l-header--nav-secondary li a {
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  cursor: pointer;
+}
+
+.l-header--nav .l-header--nav-secondary li a:hover {
+  opacity: .6;
+}
+
+.l-header--nav-btn {
+  display: none;
+}
+
+/* Icons
+----------------------------------------------------------------- */
+/* 会員プラン
+------------------------------------*/
+*[class*='icon-plan-'] {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 21px;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+
+*[class*='icon-plan-']:before {
+  display: inline-block;
+  height: 21px;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.icon-plan-highgrade {
+  background-color: #a4005b;
+}
+
+.icon-plan-highgrade:before {
+  content: "H";
+}
+
+.icon-plan-standard {
+  background-color: #0075a9;
+}
+
+.icon-plan-standard:before {
+  content: "S";
+}
+
+.icon-plan-junior {
+  background-color: #009944;
+}
+
+.icon-plan-junior:before {
+  content: "J";
+}
+
+.icon-plan-family {
+  background-color: #a40000;
+}
+
+.icon-plan-family:before {
+  content: "F";
+}
+
+.icon-plan-premium {
+  background-color: #92a8ab;
+}
+
+.icon-plan-premium:before {
+  content: "P";
+}
+
+.icon-plan-takapoint {
+  background-color: #ffe68b;
+  color: #000;
+}
+
+.icon-plan-takapoint:before {
+  content: "T";
+}
+
+/* club hawks [at headernav]
+----------------------------------------------------------------- */
+.c-clubhawks {
+  margin: 0 0 0 auto;
+}
+
+.c-clubhawks:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.c-clubhawks .wrapper,
+.c-clubhawks .username {
+  float: left;
+  vertical-align: middle;
+}
+
+.c-clubhawks .wrapper {
+  padding: 2px 2px 2px 5px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  /* var */
+}
+
+.c-clubhawks .wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.c-clubhawks .wrapper > * {
+  float: left;
+  display: inline-block;
+  min-height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.c-clubhawks .wrapper *[class*='plan--'] span {
+  margin: 1px 5px 0px 0;
+  vertical-align: top;
+}
+
+.c-clubhawks .wrapper *[class*='takapoint--'] {
+  min-width: 167px;
+  margin-left: 1em;
+  text-align: center;
+  border-radius: 0 1px 1px 0;
+  background: #FFF;
+}
+
+.c-clubhawks .wrapper *[class*='icon-stage-'] {
+  margin-right: 5px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 1px;
+  min-height: 22px;
+  line-height: 22px;
+}
+
+.c-clubhawks .wrapper *[class*='icon-stage-'] img {
+  vertical-align: middle;
+  line-height: 0;
+}
+
+.c-clubhawks .username {
+  padding: 5px 0 0 10px;
+}
+
+.c-clubhawks .username a {
+  display: inline-block;
+  max-width: 180px;
+  font-size: 14px;
+}
+
+.c-clubhawks .username span {
+  font-size: 10px;
+}
+
+

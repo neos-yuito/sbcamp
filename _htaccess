@@ -1,0 +1,13 @@
+
+
+#================== ベーシック認証 ==================
+AuthUserFile /home/www/csroot05.primeworks.ne.jp/htdocs/603_seo_sem/pia_sb/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Input ID and Password."
+AuthType Basic
+require valid-user
+<Files ~ "^.(htpasswd|htaccess)$">
+    deny from all
+</Files>
+#================== /ベーシック認証 ==================
+

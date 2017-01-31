@@ -18,11 +18,11 @@
 /*-----  contents -------
 
 	 1: common
-	 2: 
-	 3: 
-	 4: 
-	 5: 
-	  
+	 2:
+	 3:
+	 4:
+	 5:
+
 ----------------------*/
 
 
@@ -241,7 +241,7 @@ div.vacancy span{
 /* paragraph
 --------------------*/
 
-p.pagetop { margin-top: 25px; text-align: right; }
+/*p.pagetop { margin-top: 25px; text-align: right; }*/
 
 
 /* list
@@ -338,7 +338,7 @@ span.triangle{
 	color: #af0f44;
 	font-weight: bold;
 	vertical-align: middle;
-}	
+}
 dl.seat-select {
 	width: 202px;
 	float: left;
@@ -593,7 +593,7 @@ ul.ticket-details li dd p {
 	color: #001ca5;
 	background:url(../img/icon_deletion.gif) left 2px no-repeat;
 }
-ul.ticket-details li dd p a:link, 
+ul.ticket-details li dd p a:link,
 ul.ticket-details li dd p a:visited {
 	color: #001ca5;
 	text-decoration: underline;
@@ -601,7 +601,7 @@ ul.ticket-details li dd p a:visited {
 ul.ticket-details li dd p a:hover,
 ul.ticket-details li dd p a:active{
 	color: #001ca5;
-	text-decoration: none; 
+	text-decoration: none;
 }
 dd ul.ticket-details li span {
 	padding: 2px 10px;
@@ -726,7 +726,7 @@ table.calendar td span.sun{
 table.calendar td span.sun-no-month{
 	color: #feb2b2;
 }
-table.calendar a:link, 
+table.calendar a:link,
 table.calendar a:visited {
 	color: #0d26a3;
 	text-decoration: underline;
@@ -734,7 +734,7 @@ table.calendar a:visited {
 table.calendar a:hover,
 table.calendar a:active{
 	color: #0d26a3;
-	text-decoration: none; 
+	text-decoration: none;
 }
 
 /* progress-tracker */
@@ -918,22 +918,22 @@ ul.UIElm-select-option li{
 	background: #fff4e8;
 }
 
-	
 
-/*2: 
+
+/*2:
 =================================*/
 
 
 
-/*3: 
+/*3:
 =================================*/
 
 
 
-/*4: 
+/*4:
 =================================*/
 
 
 
-/*5: 
+/*5:
 =================================*/

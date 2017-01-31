@@ -29,28 +29,38 @@
 
 
 
-<div id="header-wrapper">
-<!--============ HEADER-WRAPPER =============-->
+<header class="l-header">
+<div class="l-header--inner">
 
-<div id="header">
-<!--============ HEADER =============-->
+<h1 class="l-header--logo"><a href="f1-1.html"><img src="asset/img/logo.png" alt="タカチケット"></a></h1>
 
-<p class="logo"><img src="img/logo.png" alt="SoftBank HAWKS　タカチケット" width="296" height="50" /></p>
+<nav class="l-header--nav js-headernav">
+<div class="l-header--nav-inner">
 
-<ul class="subnav">
-<li class="first-child"><a href="#">動作・セキュリティ</a></li>
-<li><a href="#">利用規約</a></li>
-<li><a href="#">ヘルプ</a></li>
+
+
+<div class="l-header--nav-primary">
+  <ul>
+    <li class="l-header--nav-regist"><a href="https://takapo.softbankhawks.co.jp/regMail">タカポイント会員登録(無料)</a></li>
+  </ul>
+</div>
+
+<p class="l-header--nav-login"><a href="l1.html">ログイン</a></p>
+
+<ul class="l-header--nav-secondary">
+  <li><a href="f1-1.html">タカチケットTOP</a></li>
+  <li><a href="guide/about.html">ご利用ガイド</a></li>
+  <li><a href="p1.html">利用規約</a></li>
 </ul>
 
-<!--=========== /HEADER =============-->
+
 </div>
+</nav><!--/.l-header--nav-->
 
-<!--=========== /HEADER-WRAPPER =============-->
 </div>
+</header><!--/.l-header-->
 
 
- 
 <div class="main">
 <!--=========== MAIN =============-->
 
@@ -315,37 +325,26 @@
 
 </form>
 
-<p class="pagetop"><a href="#container">▲ ページTOP</a></p>
-
 <!--=========== /MAIN =============-->
 </div>
 
 
 
-<div id="footer-wrapper">
-<!--============ FOOTER-WRAPPER =============-->
-
-<div id="footer">
-<!--=========== FOOTER =============-->
-
-<ul class="footernav">
-<li><a href="#">特定取引法に基づく表示</a></li>
-<li><a href="#">情報セキュリティポリシー </a></li>
-<li><a href="#">個人情報保護方針</a></li>
-<li class="last-child"><a href="#">お問い合わせ</a></li>
+<p class="pagetop js-scrolltop"><a href="#">pagetop</a></p>
+<footer class="l-footer">
+<nav class="l-footer--nav">
+<ul>
+  <li><a href="http://www.softbankhawks.co.jp/company/policy.html?_ga=1.214797527.1322533534.1482810245" target="_blank">情報セキュリティポリシー</a></li>
+  <li><a href="http://www.softbankhawks.co.jp/company/privacy.html?_ga=1.50307430.1322533534.1482810245" target="_blank">個人情報について</a></li>
+  <li><a href="info/terms.html" target="_blank">利用規約</a></li>
+  <li><a href="info/mailorderlaw.html" target="_blank">特定商取引法に基づく表示</a></li>
+  <li><a href="http://www.softbankhawks.co.jp/pc/game/guide/contract.html" target="_blank">試合観戦契約約款</a></li>
+  <li><a href="http://dev.pia.neoscorp.ne.jp/sb/guide/security.html" target="_blank">動作環境・セキュリティ</a></li>
+  <li><a href="http://redirect.pia.jp/pc/hkstls.html" target="_blank">お問い合わせ</a></li>
 </ul>
-
-<p class="gard">記事や写真等の無断転用を禁じます。</p>
-
-<p class="copyright">Copyright &copy; Fukuoka SoftBank HAWKS Corp. All Rights Reserved.<br />
-Copyright &copy; Fukuoka SoftBank HAWKS Marketing Corp. All Rights Reserved.<br />
-Copyright &copy; Link Station Co.,Ltd. All rights reserved.</p>
-
-<!--=========== /FOOTER =============-->
-</div>
-
-<!--=========== /FOOTER-WRAPPER =============-->
-</div>
+</nav>
+<p class="copyrights">Copyright &copy; Fukuoka SoftBank HAWKS Corp. All Rights Reserved.</p>
+</footer><!--/.l-footer-->
 
 
 
@@ -357,6 +356,7 @@ Copyright &copy; Link Station Co.,Ltd. All rights reserved.</p>
 <!--=========== SCRIPT ============-->
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/ui.elements.js"></script>
+<script type="text/javascript" src="asset/js/common.js"></script>
 <script type="text/javascript">
 $(function(){
 	// selectのデザイン変更
@@ -369,7 +369,7 @@ $(function(){
 	$('form').UIElements({
 		select: selectlist
 	});
-	
+
 	$('ul.UIElm-select-option').each(function(i){
 		$(this).find('li:last').addClass('last-child');
 	});
