@@ -13,7 +13,50 @@
  *
 =====================================================*/
 
+div.main .mright10 { margin-right: 10px; }
+div.main .mbottom15 { margin-bottom: 15px; }
+div.main .tx-l { text-align: left; }
+
+
 dl.attestation dd p {
   margin: 10px auto 0;
   width: 372px;
+}
+
+.p-purchasedata--customer .notes {
+  margin: 3px 0 0;
+  width: auto;
+}
+
+.p-purchasedata--customer .notes-ex {
+  color: #e00;
+  font-size: 14px;
+}
+
+dl.p-purchasedata--customer dd input {
+  vertical-align: middle;
+}
+
+dl.p-purchasedata--customer dd input[type="radio"] {
+  height: auto;
+  vertical-align: baseline;
+}
+
+dl.p-purchasedata--customer .p-purchasedata--customer-innerlist {
+  margin-bottom: 15px;
+}
+
+dl.p-purchasedata--customer .p-purchasedata--customer-innerlist dt {
+  display: inline-block;
+  padding: 1px 5px 0 0;
+  vertical-align: top;
+  width: 200px;
+}
+
+dl.p-purchasedata--customer .p-purchasedata--customer-innerlist dd {
+  display: inline-block;
+}
+
+dl.p-purchasedata--customer .p-purchasedata--customer-innerlist dd input.width300 {
+  width: 300px;
 }
