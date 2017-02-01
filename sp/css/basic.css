@@ -1859,7 +1859,7 @@ p.toggle-close03:after { background-position: 0 -52px; }
 }
 
 .p-purchasedata--customer .p-purchasedata--customer-select {
-  background: #ffffff url(../../asset/img/bg_select.png) no-repeat 100% 50%;
+  background: #ffffff url(../asset/img/bg_select.png) no-repeat 100% 50%;
   font-size: 14px;
   background-size: 19px auto;
   width: auto;
