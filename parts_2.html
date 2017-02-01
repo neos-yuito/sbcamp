@@ -67,56 +67,145 @@
 <form method="post" action="">
 
 
-<h1 class="tit">ログイン</h1>
+<h1 class="tit">個人情報入力画面</h1>
 
+<h2 class="stit mtop40">フォーム入力欄１</h2>
 
-<dl class="att-box mtop40">
-<dt><span>【必ずご確認ください】</span></dt>
-<dd class="tx-c">
-タカチケットをご利用いただくには、クラブホークス会員(有料)または<br />
-タカポイント会員(無料)への会員登録が必要となります。</dd>
-<dd class="tx-c">2017年度クラブホークスにご入会いただいている方はタカチケットをご利用頂けます。(新規会員登録不要)<br>
-会員登録がお済でない方は、タカポイント会員(無料)にご登録ください。</dd>
+<dl class="attestation mtop20 p-purchasedata--customer">
+<dt class="font18 tx-l">お名前</dt>
+<dd class="font16 tx-l">大和田　正継</dd>
+<dt class="font18 tx-l mtop40">フリガナ</dt>
+<dd class="font16 tx-l">オオワダ　マサツグ</dd>
+<dt class="font18 tx-l mtop40">メールアドレス
+<span class="notes-ex">※必須</span>
+</dt>
+<dd class="tx-l">
+  <ul>
+    <li class="mbottom15"><label class="font16"><input type="radio" name="radio02" checked="" value="owada@neoscorp.jp" class="mright10">owada@neoscorp.jp</label></li>
+    <li class="mbottom15"><label class="font16"><input type="radio" name="radio02" value="owada2@neoscorp.jp" class="mright10">owada2@neoscorp.jp</label></li>
+    <li class="mbottom15"><label class="font16"><input type="radio" name="radio02" value="" class="mright10"><input name="input01" id="input01" type="text" value=""></label></li>
+  </ul>
+</dd>
+<dt class="font18 tx-l mtop40">電話番号
+<span class="notes-ex">※必須</span>
+</dt>
+<dd class="tx-l">
+  <select id="input02" name="tel">
+    <option value="0352096631" selected="">03-5209-6631</option>
+    <option value="09000000000">090-0000-0000</option>
+  </select>
+</dd>
+<dt class="font18 tx-l mtop40">電話番号
+<span class="notes-ex">※必須</span>
+<span class="notes-ex">※ハイフン不要</span>
+</dt>
+<dd class="tx-l">
+  <input name="input01" id="input01" type="text" value="">
+</dd>
+
 </dl>
 
-<div class="graybox mtop10">
-<p class="fontbold">会員IDを入力してください。</p>
-</div>
 
-<div class="graybox mtop10">
-<p class="fontbold">パスワードを入力してください。</p>
-</div>
+<h2 class="stit mtop40">フォーム入力欄２</h2>
 
-<dl class="attestation mtop20">
-<dt class="font18">ログインID</dt>
-<dd>
-<input name="number" type="text" size="20" class="width02" value="">
-<p class="notes">※10桁の会員番号またはメールアドレス<br>
-(8桁の会員番号の方は頭に「10」をつけてください)</p>
+<dl class="attestation mtop20 p-purchasedata--customer">
+
+<dt class="font18 tx-l">郵送先名前</dt>
+<dd class="font16 tx-l">
+<input name="name1" type="text" size="20" value="" class="font16">
+<input name="name1" type="text" size="20" value="" class="font16">
+<p class="notes">※全角10文字以内</p>
 </dd>
-<dt class="font18 mtop40">ログインパスワード</dt>
-<dd>
-<input name="phonenumber" type="text" size="20" class="width02" value="">
-<p class="notes">※半角英数字</p>
-<p class="notes"><a href="http://www.softbankhawks.co.jp/fanclub/takapoint/guidance.html#login_pass">※クラブホークス会員のパスワードについて</a></p>
+
+<dt class="font18 tx-l mtop40">郵送先フリガナ</dt>
+<dd class="font16 tx-l">
+<input name="kana1" type="text" size="20" value="" class="font16">
+<input name="kana1" type="text" size="20" value="" class="font16">
+<p class="notes">※全角10文字以内</p>
+</dd>
+
+<dt class="font18 tx-l mtop40">郵便番号</dt>
+<dd class="tx-l font16">
+<input name="" type="text" size="8" class="font16" value="">
+  -
+<input name="" type="text" size="8" class="font16" value="">
+<p class="notes">※半角数字3文字 / 4文字以内</p>
+</dd>
+
+<dt class="font18 tx-l mtop40">住所</dt>
+<dd class="tx-l">
+<dl class="p-purchasedata--customer-innerlist">
+<dt class="tx-l font16">都道府県</dt>
+<dd class="tx-l">
+<select id="" name="prefectures">
+  <option>都道府県</option>
+  <option value="">北海道</option>
+  <option value="">青森</option>
+  <option value="">秋田</option>
+</select>
 </dd>
 </dl>
+
+<dl class="p-purchasedata--customer-innerlist">
+<dt class="tx-l font16">市区町村</dt>
+<dd class="tx-l font16">
+<input name="" type="text" size="8" class="width300 font16" value="">
+<p class="notes">※全角26文字以内</p>
+</dd>
+</dl>
+
+<dl class="p-purchasedata--customer-innerlist">
+<dt class="tx-l font16">町名番地</dt>
+<dd class="tx-l font16">
+<input name="" type="text" size="8" class="width300 font16" value="">
+<p class="notes">※全角26文字以内</p>
+</dd>
+</dl>
+
+<dl class="p-purchasedata--customer-innerlist">
+<dt class="tx-l font16">ビル・マンション名・号室</dt>
+<dd class="tx-l font16">
+<input name="" type="text" size="8" class="width300 font16" value="">
+<p class="notes">※全角26文字以内</p>
+</dd>
+</dl>
+</dd>
+
+</dl>
+
 
 <ul class="btn-horizon mtop40">
 <li>
 <a href="#" class="btn-base btn-cancel btn-width01"><span><span>前のページへ戻る</span></span></a>
-</li><!--
---><li>
-<a href="#" class="btn-base btn-decision btn-width01"><span><span>ログイン</span></span></a>
+</li>
+<li>
+<a href="#" class="btn-base btn-decision btn-width01"><span><span>払い戻し内容確認</span></span></a>
 </li>
 </ul>
 
-<p class="mtop10 font18">スマートフォン等でアクセスされる場合、お客様の電波状況によりご購入時にエラーが表示されることがございます。購入が完了されている場合がありますので、アカウントメニューの購入履歴より購入内容をご確認ください。</p>
+<h2 class="stit mtop40">フォーム入力欄３</h2>
 
-<p class="tx-c mtop25"><a href="#">>>パスワードを忘れたクラブホークス会員の方はこちら</a></p>
-<p class="tx-c mtop25"><a href="#">>>パスワードを忘れたタカポイント会員(無料)の方はこちら</a></p>
+<dl class="attestation mtop20 p-purchasedata--customer">
+<dt class="font18 tx-l">郵送先名前</dt>
+<dd class="font16 tx-l">大和田　正継</dd>
+<dt class="font18 tx-l mtop40">郵送先フリガナ</dt>
+<dd class="font16 tx-l">オオワダ　マサツグ</dd>
+<dt class="font18 tx-l mtop40">郵便番号</dt>
+<dd class="font16 tx-l">111 - 1111</dd>
+<dt class="font18 tx-l mtop40">住所</dt>
+<dd class="font16 tx-l">福岡県 福岡市 中央区地行浜２丁目２-２</dd>
 
-<p class="tx-c mtop50"><a href="#" class="btn-base btn-decision btn-width04"><span><span>新規会員登録はこちら</span></span></a></p>
+</dl>
+
+
+<ul class="btn-horizon mtop40">
+<li>
+<a href="#" class="btn-base btn-cancel btn-width01"><span><span>前のページへ戻る</span></span></a>
+</li>
+<li>
+<a href="#" class="btn-base btn-decision btn-width01"><span><span>払い戻し申込する</span></span></a>
+</li>
+</ul>
 
 </form>
 

@@ -1433,7 +1433,8 @@ div.input-screen dd{
 	padding: 0 20px;
 	text-align: center;
 }
-div.input-screen dd input {
+div.input-screen dd input[type="text"],
+div.input-screen dd select {
   width: 90%;
   padding: 6px 7px;
   font-size: 116%;
@@ -1805,3 +1806,83 @@ p.btn-toggle03:after {
 p.toggle-close:before { background-position: 0 -52px; }
 
 p.toggle-close03:after { background-position: 0 -52px; }
+
+
+/* add
+-------------------------------------------------- */
+.p-purchasedata--customer .mright5 {
+  margin-right: 5px;
+}
+
+.p-purchasedata--customer .notes {
+  margin: 3px 0 0;
+  width: auto;
+}
+
+.p-purchasedata--customer .notes-ex {
+  color: #e00;
+  font-size: 10px;
+}
+
+.p-purchasedata--customer .tx-l {
+  text-align: left;
+}
+
+.p-purchasedata--customer dt {
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.p-purchasedata--customer dd input {
+  vertical-align: middle;
+}
+
+.p-purchasedata--customer dd input[type="radio"] {
+  height: auto;
+  vertical-align: middle;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-input {
+  width: auto !important;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-input--w80 {
+  width: 80px !important;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-input--w100 {
+  width: 100px !important;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-input--w200 {
+  width: 200px !important;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-select {
+  background: #ffffff url(../img/bg_select.png) no-repeat 100% 50%;
+  font-size: 14px;
+  background-size: 19px auto;
+  width: auto;
+  height: auto;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-innerlist {
+  margin-bottom: 15px;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-innerlist dt {
+  display: inline-block;
+  padding: 1px 5px 0 0;
+  vertical-align: top;
+  width: 200px;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-innerlist dd {
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-innerlist dd input.width300 {
+  width: 300px;
+}
