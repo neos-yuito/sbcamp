@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*=====================================================
+ * Style Name: Contents Style
+ * Style URL: ./css/contens.css
+ * Description: Contents Stylesheet
+ * Version: 0.2
+ * Last Up Date: 2012/11/29
+ * Author: Neos
+ * Author URL: http://www.neoscorp.jp/
+ *
+ * Markup Reference: none
+ *
+=====================================================*/
+
+dl.attestation dd p {
+  margin: 10px auto 0;
+  width: 372px;
+}

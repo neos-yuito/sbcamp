@@ -62,3 +62,7 @@
 /*
 ===== 6: Footer Style ===========================*/
 @import url(footer.css);
+
+/*
+===== 6: Add Style ===========================*/
+@import url(add.css);

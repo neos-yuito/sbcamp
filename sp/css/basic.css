@@ -699,8 +699,10 @@ section .font14 { font-size: 116%; }
 section .font18, section p.font18 { font-size: 150%; }
 
 section select {
-	height: 30px;
+  height: 30px;
 }
+
+section .tdunder { text-decoration: underline; }
 
 /* link color
 ----------------------------*/
@@ -1432,17 +1434,24 @@ div.input-screen dd{
 	text-align: center;
 }
 div.input-screen dd input {
-	width: 90%;
-	padding: 6px 7px;
-	font-size: 116%;
-	border: #bbbbbb 1px solid;
-	border-radius: 3px;
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-	box-shadow: 0 1px 2px #e5e5e5 inset;
-		-webkit-box-shadow: 0 1px 2px #e5e5e5 inset;
-		-moz-box-shadow: 0 1px 2px #e5e5e5 inset;
-	vertical-align: middle;
+  width: 90%;
+  padding: 6px 7px;
+  font-size: 116%;
+  border: #bbbbbb 1px solid;
+  border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+  box-shadow: 0 1px 2px #e5e5e5 inset;
+    -webkit-box-shadow: 0 1px 2px #e5e5e5 inset;
+    -moz-box-shadow: 0 1px 2px #e5e5e5 inset;
+  vertical-align: middle;
+}
+div.input-screen dd .notes {
+  width: 90%;
+  text-align: left;
+}
+div.input-screen dd .notes a {
+  text-decoration: underline;
 }
 
 /* form */
