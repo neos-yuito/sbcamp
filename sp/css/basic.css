@@ -1434,6 +1434,7 @@ div.input-screen dd{
 	text-align: center;
 }
 div.input-screen dd input[type="text"],
+div.input-screen dd input[type="tel"],
 div.input-screen dd select {
   width: 90%;
   padding: 6px 7px;
@@ -1846,6 +1847,10 @@ p.toggle-close03:after { background-position: 0 -52px; }
   width: auto !important;
 }
 
+.p-purchasedata--customer .p-purchasedata--customer-input--w60 {
+  width: 60px !important;
+}
+
 .p-purchasedata--customer .p-purchasedata--customer-input--w80 {
   width: 80px !important;
 }
@@ -1875,6 +1880,7 @@ p.toggle-close03:after { background-position: 0 -52px; }
   padding: 1px 5px 0 0;
   vertical-align: top;
   width: 200px;
+  font-weight: normal;
 }
 
 .p-purchasedata--customer .p-purchasedata--customer-innerlist dd {
@@ -1885,4 +1891,38 @@ p.toggle-close03:after { background-position: 0 -52px; }
 
 .p-purchasedata--customer .p-purchasedata--customer-innerlist dd input.width300 {
   width: 300px;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-before {
+  margin-right: 5px;
+}
+
+.p-purchasedata--customer .p-purchasedata--customer-labelin {
+  width: 42px;
+  display: inline-block;
+}
+
+
+
+/* -----------------------------------------------------------------
+ ログイン
+----------------------------------------------------------------- */
+.p-login .error {
+  margin: 0;
+  font-size: 12px;
+  padding: 10px 10px 6px;
+}
+
+.p-login .error ul {
+  padding: 0;
+}
+
+.p-login .error li {
+  position: relative;
+  background: url(../../asset/img/icon_error.svg) no-repeat 0 0;
+  background-size: 26px;
+  color: #ee0000;
+  margin: 0 0 4px;
+  padding: 4px 0 0 36px;
+  min-height: 26px;
 }
