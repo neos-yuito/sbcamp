@@ -24,6 +24,7 @@
 <!--=========== SCRIPT ============-->
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/library.js"></script>
+<script type="text/javascript" src="asset/js/common.js"></script>
 <!--=========== /SCRIPT ============-->
 </head>
 
@@ -36,16 +37,48 @@
 
 
 
-<header id="header">
-<!--===== header =====-->
+<header class="l-header">
+<div class="l-header--inner">
 
-<h1><img src="img/logo.png" width="148" height="25" alt="SoftBank HAWKS　タカチケット"></h1>
+<h1 class="l-header--logo"><a href="f1-1.html"><img src="../asset/img/logo.png" alt="タカチケット"></a></h1>
 
-<!--===== /header =====-->
-</header>
+<nav class="l-header--nav js-headernav">
+<div class="l-header--nav-inner">
+
+
+<div class="l-header--nav-primary">
+
+  <div class="c-clubhawks">
+    <div class="wrapper">
+      <p class="plan--standard"><span class="icon-plan-standard"></span>スタンダード会員</p>
+      <!-- <p class="takapoint--silver">Silver STAGE</p> -->
+      <p class="takapoint--silver"><span class="icon-stage-silver"><img src="../asset/img/icon_silver_stage.png" alt=""></span>シルバーステージ</p>
+    </div>
+    <p class="username"><a href="">大和田 正継</a><span>さん</span></p>
+  </div>
+
+</div>
+
+<p class="l-header--nav-logout"><a href="l2.html">ログアウト</a></p>
+
+<ul class="l-header--nav-secondary">
+  <li><a href="http://hawks-ticket.jp/">タカチケットTOP</a></li>
+  <li><a href="https://hawks-ticket.jp/mypage/lot/">抽選申込履歴</a></li>
+  <li><a href="https://hawks-ticket.jp/mypage/history/">購入履歴</a></li>
+  <li><a href="http://hawks-ticket.jp/guide/about">ご利用ガイド</a></li>
+  <li><a href="http://hawks-ticket.jp/guide/terms">利用規約</a></li>
+</ul>
 
 
 
+</div>
+</nav><!--/.l-header--nav-->
+
+</div>
+</header><!--/.l-header-->
+
+
+<div class="l-container">
 <div class="main">
 <!--===== .main =====-->
 
@@ -342,38 +375,25 @@
 <!--===== /.main =====-->
 </div>
 
-<footer>
-<!--=========== footer ============-->
+<p class="pagetop js-scrolltop"><a href="#">pagetop</a></p>
 
-<div class="pagetop"><p><a href="#container">▲ ページTOP</a></p></div>
-<nav class="footer-nav">
+<footer class="l-footer">
+<nav class="l-footer--nav">
 <ul>
-<li><a href="#">動作・セキュリティ</a></li>
-<li><a href="#">利用規約</a></li>
-<li><a href="#">ヘルプ</a></li>
-</ul>
-<p class="pc-btn mtop20"><a href="#">PC版サイトを見る</a></p>
-</nav>
-
-<nav class="footer-list">
-<ul>
-<li><a href="#">特定取引法に基づく表示</a></li>
-<li><a href="#">情報セキュリティポリシー</a></li>
-<li><a href="#">個人情報保護方針</a></li>
-<li><a href="#">お問い合わせ</a></li>
+  <li><a href="http://www.softbankhawks.co.jp/company/policy.html?_ga=1.214797527.1322533534.1482810245" target="_blank">情報セキュリティポリシー</a></li>
+  <li><a href="http://www.softbankhawks.co.jp/company/privacy.html?_ga=1.50307430.1322533534.1482810245" target="_blank">個人情報について</a></li>
+  <li><a href="http://hawks-ticket.jp/guide/terms" target="_blank">利用規約</a></li>
+  <li><a href="http://hawks-ticket.jp/guide/mailorderlaw" target="_blank">特定商取引法に基づく表示</a></li>
+  <li><a href="http://www.softbankhawks.co.jp/pc/game/guide/contract.html" target="_blank">試合観戦契約約款</a></li>
+  <li><a href="http://hawks-ticket.jp/guide/security" target="_blank">動作環境・セキュリティ</a></li>
+  <li><a href="http://redirect.pia.jp/pc/hkstls.html" target="_blank">お問い合わせ</a></li>
 </ul>
 </nav>
-
-<div class="copyrights">
-<p>記事や写真等の無断転用を禁じます。</p>
-<p><small>Copyright © Fukuoka SoftBank HAWKS Corp. All Rights Reserved.<br>
-Copyright © Fukuoka SoftBank HAWKS Marketing Corp. All Rights Reserved.<br>
-Copyright © Link Station Co.,Ltd. All rights reserved.</small></p>
-</div>
+<p class="copyrights">Copyright &copy; Fukuoka SoftBank HAWKS Corp. All Rights Reserved.</p>
+</footer><!--/.l-footer-->
 
 
-<!--=========== /footer ============-->
-</footer>
+</div><!-- /.l-container -->
 
 
 
