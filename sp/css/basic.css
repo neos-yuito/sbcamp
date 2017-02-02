@@ -1926,3 +1926,508 @@ p.toggle-close03:after { background-position: 0 -52px; }
   padding: 4px 0 0 36px;
   min-height: 26px;
 }
+
+/* -----------------------------------------------------------------
+ ポイント行使
+----------------------------------------------------------------- */
+div.main .p-point h2 span {
+  display: inline-block;
+}
+
+.p-point .u-color-red {
+  color: #f00;
+}
+
+.p-point .p-point--textarea {
+  width: 100%;
+  height: 160px;
+  overflow: auto;
+  border: #adbbbb 1px solid;
+  box-sizing: border-box;
+}
+
+.p-point .p-point--textarea p {
+  padding: 5px 10px;
+}
+
+.p-point .p-point--message {
+  margin: 15px auto;
+}
+
+.p-point .p-point--message dt {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #f00;
+}
+
+
+/*
+ 試合カレンダー
+----------------------------------------------------------------- */
+.p-calendar--outer {
+  background: #ffffff;
+  font-family: Helvetica , Avenir , "Open Sans" , Arial , Verdana , Roboto , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+  padding: 12px 5px 5px;
+}
+
+.p-calendar--title {
+  display: table;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.p-calendar--prev, .p-calendar--date, .p-calendar--next {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.p-calendar--prev {
+  width: 35px;
+}
+
+.p-calendar--next {
+  width: 35px;
+}
+
+.p-calendar--list {
+  letter-spacing: -0.4em;
+  line-height: 1;
+  text-align: center;
+}
+
+.p-calendar--item {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.p-calendar--item.month {
+  font-size: 33px;
+  margin: 0 7px;
+}
+
+.p-calendar--info {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.p-calendar--info.pc-hide {
+  display: block;
+}
+
+.p-calendar--info.sp-hide {
+  display: none;
+}
+
+.p-calendar--info a {
+  color: #00A0E9;
+  text-decoration: underline;
+  display: block;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.p-calendar--info a:hover {
+  text-decoration: none;
+}
+
+.p-calendar--vacant-info {
+  margin: 10px;
+}
+
+.p-calendar--vacant-info dt {
+  display: block;
+}
+
+.c-cards {
+  background: #EEE;
+  padding: 8px 0 0 8px;
+}
+
+.c-cards--tit {
+  float: left;
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 7px;
+  width: 20.6%;
+}
+
+.c-cards--list {
+  float: left;
+  font-size: 16px;
+  width: 77%;
+}
+
+.c-cards--item {
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 7px;
+  margin-bottom: 3px;
+}
+
+.c-cards [class*='icon-rates-'] {
+  color: #ffffff;
+  margin-right: 3px;
+  vertical-align: top;
+}
+
+.c-cards02 {
+  background: #EEE;
+  padding: 8px 0 8px 8px;
+}
+
+.c-cards02--tit {
+  float: left;
+  font-weight: bold;
+  margin: 0 7px 5px 0;
+  font-size: 12px;
+  width: 25%;
+}
+
+.c-cards02--list {
+  float: left;
+  font-size: 16px;
+  color: #FFF;
+  width: 72%;
+}
+
+.c-cards02--item {
+  border-radius: 2px;
+  color: #FFF;
+  float: left;
+  line-height: 24px;
+  padding: 0 20px;
+  width: 120px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  margin-right: 7px;
+  margin-bottom: 3px;
+}
+
+.c-cards02--item.label-lottery {
+  background: #c00000;
+  width: 110px;
+}
+
+.c-cards02--item.label-presale {
+  background: #0033cc;
+  width: 110px;
+}
+
+.c-cards02--desc {
+  clear: both;
+  font-size: 12px;
+}
+
+.c-cards02--desc a {
+  text-decoration: underline;
+}
+
+.c-cards02--desc a:hover {
+  text-decoration: none;
+}
+
+.c-calendartable--body {
+  border-top: 1px solid #e5e5e5;
+  border-left: 0;
+}
+
+.c-calendartable--list {
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+  display: table;
+  width: 100%;
+}
+
+.c-calendartable--list--blank {
+  display: none;
+}
+
+.c-calendartable--list.other-month {
+  background: #F8F8F8;
+  color: #CCC;
+}
+
+.c-calendartable--list.nowonsale {
+  background: #fff7ce;
+}
+
+.c-calendartable--list.nowonsale:hover {
+  background: #ffe477;
+}
+
+.c-calendartable--date {
+  background: #f5f5f5;
+  border-right: 1px solid #e5e5e5;
+  display: table-cell;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 14px;
+  width: 22%;
+  max-width: 103px;
+}
+
+.c-calendartable--date span {
+  font-size: 10px;
+}
+
+.c-calendartable--date.saturday {
+  background: #7ecef4;
+}
+
+.c-calendartable--date.sunday {
+  background: #f19ec2;
+}
+
+.c-calendartable--card {
+  font-weight: normal;
+  vertical-align: bottom;
+}
+
+.c-calendartable--inbox {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.c-calendartable--content {
+  position: relative;
+}
+
+.c-calendartable--content [class*='icon-rates-'] {
+  color: #ffffff;
+  vertical-align: top;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin: 0 0 0 4px;
+}
+
+.c-calendartable--content [class*='icon-rates-']:before {
+  background-size: 10px 10px;
+  line-height: 10px;
+  height: 10px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 10px;
+}
+
+.c-calendartable--before {
+  background: #ffffff;
+  box-sizing: border-box;
+  position: relative;
+  border-top: 1px solid #e5e5e5;
+  display: table;
+  min-height: 27px;
+  padding: 0 10px 0 5px;
+  width: 100%;
+}
+
+.c-calendartable--before:first-child {
+  border-top: 0;
+}
+
+.c-calendartable--end {
+  border-top: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: table;
+  width: 100%;
+  min-height: 27px;
+}
+
+.c-calendartable--end.sell-close [class*='icon-rates-'] {
+  opacity: 0.2;
+}
+
+.c-calendartable--end.sell-close .c-calendartable--wrap {
+  color: #B8B8B8;
+}
+
+.c-calendartable--end.sell-close .c-calendartable--team {
+  opacity: 0.2;
+}
+
+.c-calendartable--end.sell-close .c-calendartable--gameinfo span {
+  background: #EEE;
+}
+
+.c-calendartable--link {
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+  border-top: 0;
+  display: table;
+  min-height: 27px;
+  width: 100%;
+}
+
+.c-calendartable--link:hover {
+  background: #ffe477;
+  opacity: 1;
+}
+
+.c-calendartable--link:hover img {
+  background: #ffe477;
+  opacity: 1;
+}
+
+.c-calendartable--link img {
+  background: #fff;
+}
+
+.c-calendartable--link .c-calendartable--sell--label {
+  background: none;
+  padding: 2px 0 2px 0;
+  width: 48%;
+}
+.c-calendartable--link .c-calendartable--sell--label span {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin: 2px 0;
+}
+
+.c-calendartable--line {
+  padding: 10px 0 10px 7px;
+}
+
+.c-calendartable--lineunder {
+  padding: 0 0 10px;
+}
+
+.c-calendartable--team {
+  text-align: center;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+}
+
+.c-calendartable--team img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.c-calendartable--gameinfo {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.c-calendartable--gameinfo .label {
+  background: #fcc800;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  margin-right: 10px;
+  padding: 3px 4px;
+  font-size: 10px;
+}
+
+.c-calendartable--gameinfo .label br {
+  display: none;
+}
+
+.c-calendartable--gameinfo .text {
+  font-size: 9px;
+  display: block;
+  margin-left: 0;
+}
+
+.c-calendartable--wrap {
+  margin-top: 10px;
+  display: table-cell;
+  margin-top: 0;
+  vertical-align: middle;
+  padding: 0 0 0 6px;
+}
+
+.c-calendartable--time {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 11px;
+  line-height: 1.36;
+}
+
+.c-calendartable--place {
+  line-height: 1;
+  vertical-align: baseline;
+  margin-left: 4px;
+}
+
+.c-calendartable--place br {
+  display: none;
+}
+
+.c-calendartable--sell {
+  display: table-cell;
+  padding: 0;
+  vertical-align: middle;
+  font-size: 9px;
+  text-align: center;
+  width: 24%;
+  padding: 0 7px 0 5px;
+}
+
+.c-calendartable--sell span {
+  display: inline-block;
+  width: 22px;
+  margin-left: 0;
+  text-align: center;
+}
+
+.c-calendartable--tag {
+  line-height: 1.5;
+  padding: 0 0 0 7px;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.c-calendartable--tag:last-child {
+  margin-bottom: 0;
+}
+
+.c-calendartable--tag span {
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 2px 2px;
+  padding: 0 4px;
+  letter-spacing: normal;
+}
+
+.c-calendartable--tag span.primary {
+  font-weight: bold;
+}
+
+.c-calendartable--tag span.primary .u-color-red {
+  color: #E30000;
+  margin: 0;
+  display: inline;
+  padding: 0;
+}
+
+.c-calendartable--tag *[class*='icon-stage-'] {
+  border: 0;
+  display: inline;
+  margin: 0 3px 0 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.c-calendartable--tag *[class*='icon-stage-'] img {
+  width: 20px;
+  vertical-align: inherit;
+}
